@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>redoing Bankist</title>
+  </head>
+  <body>
+    <!--  MAVIGATION-->
+
+    <nav class="top-nav">
+      <p class="nav--p">Log in to get started</p>
+      <img class="nav--logo" src="logo.png" alt="Bankist logo" height="50" />
+
+      <form class="nav--form">
+        <input
+          type="text"
+          placeholder="user"
+          class="nav--form--id nav--input"
+        />
+        <input
+          type="password"
+          placeholder="password"
+          class="nav--form--pass nav--input"
+        />
+        <button class="nav--form--buttom buttom">&rarr;</button>
+      </form>
+    </nav>
+
+    <!--  MAIN -->
+
+    <main class="main--container">
+      <!-- CURRENTS BALLANCE  AND AMOUNT -->
+
+      <div class="cur--ballance">
+        <div>
+          <p class="current--ballance">Current Ballance</p>
+          <p class="date">10.11.1996/11:11</p>
+        </div>
+        <p class="total--amount">1000 $</p>
+      </div>
+
+      <!-- MOVEMENTS -->
+
+      <div class="main--flex">
+        <div class="all--transactions">
+          <div class="stransaction--3--div deposit--flex">
+            <div class="deposit--inner--flex">
+              <p class="deposit--num mov--type">num deposit</p>
+              <p class="deposit--date">10/11/1996</p>
+            </div>
+            <p class="deposit--amount">1000$</p>
+          </div>
+
+          <div class="stransaction--3--div deposit--flex">
+            <div class="deposit--inner--flex">
+              <p class="withdraw--num mov--type">num deposit</p>
+              <p class="deposit--date">10/11/1996</p>
+            </div>
+            <p class="deposit--amount">-1000$</p>
+          </div>
+
+          <div class="stransaction--3--div deposit--flex">
+            <div class="deposit--inner--flex">
+              <p class="deposit--num mov--type mov--type">num deposit</p>
+              <p class="deposit--date">10/11/1996</p>
+            </div>
+            <p class="deposit--amount">1000$</p>
+          </div>
+
+          <div class="stransaction--3--div deposit--flex">
+            <div class="deposit--inner--flex">
+              <p class="withdraw--num mov--type">num deposit</p>
+              <p class="deposit--date">10/11/1996</p>
+            </div>
+            <p class="deposit--amount">-1000$</p>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE OPPERATIONS -->
+
+        <div class="all--right--side--opperations">
+          <!-- TRANSFER MONEY -->
+
+          <div class="right--sidebox transfer">
+            <h2 class="tranfer-header h--two--header">Transfer money</h2>
+            <form class="rightside-grid">
+              <input class="text-input transfer--to" type="text" />
+              <input class="text-input amount" type="text" />
+              <button class="transfer--buttom buttom">&rarr;</button>
+              <label>Transfer to</label>
+              <label>Amount</label>
+            </form>
+          </div>
+
+          <!-- REQUEST LOAN -->
+
+          <div class="right--sidebox loan">
+            <h2 class="request-loan-header h--two--header">Request loan</h2>
+            <form class="rightside-grid request--loan">
+              <input type="text" class="text-input loan--request--input" />
+              <button class="request--buttom buttom">&rarr;</button>
+              <label class="loan--lable">Amount</label>
+            </form>
+
+            <div class="pop--up">
+              <p>Sorry, your loan request is denide</p>
+              <button class="popup--btn">OK</button>
+            </div>
+          </div>
+
+          <!-- CLOSE ACCOUNT -->
+
+          <div class="right--sidebox close">
+            <h2 class="close-account-header h--two--header">Close account</h2>
+            <form class="rightside-grid">
+              <input type="text" class="confirm--user--input text-input" />
+              <input type="password" class="pin--input--acc pass-input" />
+              <button class="close--buttom buttom">&rarr;</button>
+              <label>Confirm User</label>
+              <label>Confirm Pin</label>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUMMARY -->
+      <div class="aside--main--container">
+        <div class="summary--flex">
+          <div class="summary-inner-flex">
+            <p class="in--money sum--move">in</p>
+            <p class="amount--in--money sum--num">0000 $</p>
+          </div>
+
+          <div class="summary-inner-flex">
+            <p class="out--money sum--move">out</p>
+            <p class="amount--out--money sum--num">0000 $</p>
+          </div>
+
+          <div class="summary-inner-flex">
+            <p class="interest--money sum--move">interest</p>
+            <p class="amount--interest--money sum--num">000 $</p>
+          </div>
+
+          <div>
+            <p class="sort sum--move">&downarrow; SORT</p>
+          </div>
+        </div>
+        <!-- ASIDE -->
+
+        <div>
+          <p class="time-remaning">
+            You will log out in <span class="mins--remaning">10mins</span>
+          </p>
+          <!-- <p>10mins</p> -->
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
